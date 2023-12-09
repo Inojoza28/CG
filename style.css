@@ -1,0 +1,161 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: hsl(0, 0%, 10%);
+    color: #f1f1f1;
+}
+
+/* Reset de estilos e estilos gerais */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+.card {
+    background-color: #353434;
+    color: #f1f1f1;
+}
+
+.col-md-4 {
+    text-align: center;
+}
+
+.img-thumbnail {
+    width: 100%;
+    border: none;
+}
+
+.col-md-8 {
+    text-align: justify;
+}
+
+/* Animações */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Adicionando estilos para o subtexto */
+.subtext {
+    margin-top: 10px;
+    font-size: 18px;
+    color: #555;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+.subtext.hide-scrollbar {
+    overflow: hidden;
+}
+
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent }
+    50% { border-color: orange; }
+}
+
+/* Footer */
+body {
+    margin: 0;
+    overflow-x: hidden;
+}
+
+.footer {
+    padding: 30px 0px;
+    font-family: 'Play', sans-serif;
+    text-align: center;
+}
+
+.footer .rowend {
+    width: 100%;
+    margin: 1% 0%;
+    padding: 0.6% 0%;
+    color: gray;
+    font-size: 0.8em;
+    font-size: 14px;
+}
+
+.footer .rowend a {
+    text-decoration: none;
+    color: gray;
+    transition: 0.5s;
+}
+
+.footer .rowend a:hover {
+    color: #fff;
+}
+
+.footer .rowend ul {
+    width: 100%;
+}
+
+.footer .rowend ul li {
+    display: inline-block;
+    margin: 0px 30px;
+}
+
+.footer .rowend a i {
+    font-size: 2em;
+    margin: 0% 1%;
+}
+
+.emailpessoal {
+    color: grey;
+    font-size: 14px;
+}
+
+@media (max-width: 720px) {
+    .footer {
+        text-align: left;
+        padding: 5%;
+    }
+
+    .footer .rowend ul li {
+        display: block;
+        margin: 10px 0px;
+        text-align: left;
+    }
+
+    .footer .rowend a i {
+        margin: 0% 3%;
+    }
+}
+
+@media (max-width: 568px) {
+    .footer {
+        padding: auto;
+    }
+
+    .footer .rowend:first-child {
+        padding-top: 17px;
+    }
+
+    .footer .rowend {
+        text-align: center;
+    }
+
+    .footer .rowend ul {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding-left: 0;
+    }
+    .fim{
+        font-size: 14px;
+    }
+}
+
