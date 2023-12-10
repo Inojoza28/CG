@@ -13,6 +13,10 @@ h1, h2, p {
     padding: 0;
 }
 
+p{
+    font-size: 17px;
+}
+
 .card {
     background-color: #353434;
     color: #f1f1f1;
@@ -183,4 +187,39 @@ body {
 .fade-in.active {
     opacity: 1;
     transform: translateY(0);
+}
+
+
+.wrapper {
+    padding: 50px;
+    width: 100%;        /* Altere a largura para 100% */
+    display: block;
+    text-align: center;
+    margin: 0 auto;
+}
+/* Define as propriedades de estilo para a área de funções (roles) */
+.roles {
+    font-size: 1.6em;    /* Define o tamanho da fonte como 1.6 vezes o tamanho padrão */
+    height: 50px;        /* Define uma altura fixa para a área de funções */
+    vertical-align: middle;  /* Alinha verticalmente o conteúdo ao meio */
+    overflow: hidden;    /* Oculta qualquer conteúdo adicional que ultrapasse a altura definida */
+}
+
+.roles div {
+    height: 50px;
+    transition: margin-top 1s ease-in-out;
+    min-width: 200px;   /* Adicione uma largura mínima de 200px para as divs */
+}
+
+@media (max-width: 576px) {
+    .roles div {
+        margin-right: 10px; /* Reduza o espaço à direita das divs */
+    }
+    .roles{
+        font-size: 1.5em;
+        padding: auto;
+    }
+    p{
+        font-size: 16px;
+    }
 }
