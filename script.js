@@ -18,3 +18,10 @@ subtextElement.addEventListener('animationend', function() {
     // Adiciona a classe 'hide-scrollbar' após a animação
     subtextElement.classList.add('hide-scrollbar');
 });
+
+
+// animação de inicio
+document.addEventListener('DOMContentLoaded', function () {
+    // Adiciona a classe 'active' para acionar a animação
+    document.querySelector('.fade-in').classList.add('active');
+});
