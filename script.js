@@ -1,4 +1,4 @@
-// Simulando a digitação do subtitulo usando JavaScript
+// Simulando a digitação do subtitulo 
 var subtitle = document.getElementById('subtitle');
 var text = 'Subtítulo';
 
@@ -59,5 +59,4 @@ setInterval(function() {
         current++;
     }
 }, 2000);  // Intervalo para a animação (2 segundos)
-
 
