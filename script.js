@@ -1,36 +1,27 @@
-// Simulando a digitação do subtitulo 
+// digitação do subtitulo (1)
 var subtitle = document.getElementById('subtitle');
 var text = 'Subtítulo';
-
 function typeEffect(element, text) {
     var i = 0;
     var speed = 50; // Velocidade da digitação em milissegundos
-
 }
 // Chamando a função para adicionar o efeito de digitação ao subtitulo
 typeEffect(subtitle, text);
 
-// Seleciona o elemento com a classe .subtext
 var subtextElement = document.querySelector('.subtext');
-
-// Adiciona um ouvinte de eventos para a conclusão da animação
 subtextElement.addEventListener('animationend', function() {
     // Adiciona a classe 'hide-scrollbar' após a animação
     subtextElement.classList.add('hide-scrollbar');
 });
 
-
-// animação de inicio
+// animação de inicio (2)
 document.addEventListener('DOMContentLoaded', function () {
     // Adiciona a classe 'active' para acionar a animação
     document.querySelector('.fade-in').classList.add('active');
 });
 
+// roleta de palavras (3)
 
-// roleta de palavras
-
-
-// Mantém o controle da div atual
 var current = 1;
 
 // Altura da div roles
