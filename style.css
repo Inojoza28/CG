@@ -212,8 +212,8 @@ body {
     position: fixed;
     bottom: 20px;  /* Distância da parte inferior da tela */
     right: 20px;   /* Distância do lado direito da tela */
-    width: 60px;   /* Largura do botão */
-    height: 60px;  /* Altura do botão */
+    width: 55px;   /* Largura do botão */
+    height: 55px;  /* Altura do botão */
     background-color: rgb(0, 255, 179); /* Cor de fundo do botão (cor do LinkedIn) */
     border-radius: 50%; /* Deixa o botão arredondado */
     display: flex;
