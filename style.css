@@ -208,6 +208,33 @@ body {
     min-width: 200px;   
 }
 
+.linkedin-button {
+    position: fixed;
+    bottom: 20px;  /* Distância da parte inferior da tela */
+    right: 20px;   /* Distância do lado direito da tela */
+    width: 60px;   /* Largura do botão */
+    height: 60px;  /* Altura do botão */
+    background-color: rgb(0, 255, 179); /* Cor de fundo do botão (cor do LinkedIn) */
+    border-radius: 50%; /* Deixa o botão arredondado */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    z-index: 1000; /* Certifica-se que o botão fique no topo de outros elementos */
+    transition: transform 0.3s;
+}
+
+.linkedin-button:hover {
+    transform: scale(1.1); /* Efeito de zoom ao passar o mouse */
+}
+
+.linkedin-logo {
+    width: 50px;  /* Ajuste o tamanho do ícone conforme necessário */
+    height: 50px;
+}
+
+
 @media (max-width: 576px) {
     .roles div {
         margin-right: 10px; /* Reduz o espaço à direita das divs */
@@ -239,4 +266,12 @@ body {
         margin: 0 auto;
     }
 
+    .linkedin-button {
+        width: 50px;   /* Largura do botão */
+        height: 50px;  /* Altura do botão */
+    }
+    .linkedin-logo {
+        width: 40px;  /* Ajuste o tamanho do ícone conforme necessário */
+        height: 40px;
+    }
 }
