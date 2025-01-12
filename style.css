@@ -250,7 +250,7 @@ body {
 
 @media (max-width: 480px){
     .img-fluid {
-        max-width: 90%;
+        max-width: 100%;
         height: auto;
     }
 
@@ -261,7 +261,7 @@ body {
     }
 
     .fade-in.active{
-        width: 95%;
+        width: 90%;
         height: auto;
         margin: 0 auto;
     }
